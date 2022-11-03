@@ -1,0 +1,110 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  padding: 15px 85px;
+  border-bottom: 1px solid #ddd5ce;
+}
+.navbar ul li a {
+  color: black;
+}
+.navbar img {
+  width: 45px;
+  height: 45px;
+}
+.navbar .univ-stras {
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul .navbar-logo a {
+  display: flex;
+  align-items: center;
+}
+.navbar-logo a h2 {
+  max-width: 95px;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 5px;
+  font-weight: 800;
+}
+.navbar ul ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul ul li {
+  margin-left: 25px;
+}
+
+/* styling for description section */
+
+.description-section {
+  padding-top: 135px;
+  margin: 0 20%;
+}
+.description-content {
+  background-color: #f1ece8;
+  padding-top: 10px;
+  position: relative;
+}
+.description-content .header-section {
+  background-color: #ed0210;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 16px;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 50%; /* Position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+}
+.description-main-section h2 {
+  padding: 30px 0;
+  font-weight: 600;
+}
+
+.description-main-section h2,
+.description-main-section p,
+.description-main-section h3 {
+  text-align: center;
+}
+
+.description-main-section p {
+  max-width: 88%;
+  margin: 0 auto;
+}
+.description-main-section h3 {
+  padding-top: 25px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.description-main-section div ul {
+  padding: 45px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.description-main-section div ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-main-section div ul li img {
+  padding-bottom: 20px;
+  width: 45px;
+}
+.description-main-section div ul li a {
+}
+
+/* Styling for main section */
