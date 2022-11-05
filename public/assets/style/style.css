@@ -46,11 +46,11 @@
 }
 
 /* styling for description section */
-
-.description-section {
-  padding-top: 135px;
+.description-content {
   margin: 0 20%;
+  padding-top: 135px;
 }
+
 .description-content {
   background-color: #f1ece8;
   padding-top: 10px;
@@ -71,6 +71,7 @@
 .description-main-section h2 {
   padding: 30px 0;
   font-weight: 600;
+  font-size: 30px;
 }
 
 .description-main-section h2,
@@ -82,17 +83,20 @@
 .description-main-section p {
   max-width: 88%;
   margin: 0 auto;
+  font-size: 18px;
 }
 .description-main-section h3 {
-  padding-top: 25px;
+  padding-top: 40px;
   font-size: 25px;
-  font-weight: 600;
+
+  font-weight: 500;
 }
 .description-main-section div ul {
   padding: 45px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .description-main-section div ul li {
   display: flex;
@@ -104,7 +108,74 @@
   padding-bottom: 20px;
   width: 45px;
 }
-.description-main-section div ul li a {
+
+/* Styling for aide section */
+.aide-section {
+  background-color: #f7f7f7;
+  padding-bottom: 65px;
+}
+.aide-section .aide {
+  margin: 0 15%;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Styling for main section */
+.aide-section h2 {
+  font-size: 30px;
+  padding-top: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.aide-description-section ul:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.aide-description-section ul:first-child li {
+  font-size: 18px;
+}
+
+.aide-description-section > h4 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.avantage-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 55px;
+}
+.avantage-section li {
+  max-width: 28%;
+  margin-bottom: 60px;
+}
+.avantage-section li h4 {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.avantage-section li p {
+  font-size: 14px;
+}
+
+.button-div a:first-child {
+  margin-right: 45px;
+  color: white;
+  background-color: #f05b6f;
+  border-color: #f05b6f;
+}
+.button-div a {
+  color: black;
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
