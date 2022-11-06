@@ -6,7 +6,6 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
-
 .navbar {
   padding: 15px 85px;
   border-bottom: 1px solid #ddd5ce;
@@ -46,9 +45,11 @@
 }
 
 /* styling for description section */
+.description-section {
+  padding-top: 135px;
+}
 .description-content {
   margin: 0 20%;
-  padding-top: 135px;
 }
 
 .description-content {
@@ -113,6 +114,7 @@
 .aide-section {
   background-color: #f7f7f7;
   padding-bottom: 65px;
+  margin-bottom: 85px;
 }
 .aide-section .aide {
   margin: 0 15%;
@@ -125,6 +127,12 @@
   padding-top: 30px;
   font-weight: 500;
   text-align: center;
+}
+.aide-description-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .aide-description-section ul:first-child {
@@ -141,7 +149,7 @@
 
 .aide-description-section > h4 {
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
 }
@@ -151,22 +159,27 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 55px;
+  padding-top: 75px;
+  max-width: 75%;
 }
 .avantage-section li {
-  max-width: 28%;
-  margin-bottom: 60px;
+  max-width: 30%;
+  margin-bottom: 45px;
 }
 .avantage-section li h4 {
   padding-bottom: 10px;
   font-size: 18px;
 }
 .avantage-section li p {
-  font-size: 14px;
+  font-size: 15px;
+  max-width: 70%;
 }
 
+.button-div {
+  padding-top: 35px;
+}
 .button-div a:first-child {
-  margin-right: 45px;
+  margin-right: 35px;
   color: white;
   background-color: #f05b6f;
   border-color: #f05b6f;
@@ -178,4 +191,213 @@
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 25px;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #ddd5ce;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+footer p,
+footer p a {
+  color: #763237;
+}
+
+footer p a {
+  border-bottom: 1px solid #763237;
+}
+
+/* Simulation CSS style */
+.simulation {
+  padding-top: 65px;
+}
+.simulation h3 {
+  font-size: 25px;
+}
+.simulation > h2 {
+  text-align: center;
+}
+.simulation > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.simulation > div section {
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 360px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 450px;
+}
+
+.simulation > div section form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.simulation > div section label {
+  font-size: 19px;
+}
+.simulation > div section input {
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px;
+}
+.simulation > form,
+.simulation > form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.simulation #form div {
+  display: flex;
+  flex-direction: column;
+}
+.simulation > div section input[type="number"] {
+  margin-top: 15px;
+}
+
+#submit-input {
+  background-color: #ed0210;
+  padding: 11px 20px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  font-size: 17px;
+}
+
+#duree {
+  width: 70px;
+  padding: 8px 20px;
+}
+/* Result section */
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.result-section p:last-child() {
+  font-size: 10px;
+}
+
+#result-mensualite {
+  font-size: 38px;
+  font-weight: 700;
+}
+#result-mensualite span {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.rendez-vous-section {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.rendez-vous {
+  color: #e02424;
+  cursor: pointer;
+}
+
+.rdv-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+.rdv-div h2 {
+  text-align: center;
+}
+.none {
+  display: none;
+}
+
+.form-rdv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+}
+#fieldset div {
+  display: flex;
+  align-items: center;
+}
+
+.inputs-rdv {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.inputs-rdv div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+}
+.inputs-rdv div,
+#fieldset div {
+  margin: 12px 0;
+}
+#fieldset div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#fieldset label {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.form-rdv-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form-rdv-main > label {
+  text-align: start;
+}
+.form-rdv-main > label,
+.inputs-rdv label {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.form-rdv .inputs-rdv input {
+  font-size: 20px;
+  padding: 13px 10px;
+  width: 250px;
+}
+.submit-btn-rdv {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #f05b6f;
+  border-color: #f05b6f;
+  color: white;
+  margin-top: 15px;
 }

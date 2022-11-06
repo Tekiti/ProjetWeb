@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/assets/style/style.css" />
+  </head>
+  <body>
+    <!-- Header, navigation bar -->
+    <header>
+      <nav class="navbar">
+        <!-- List of nav links -->
+        <ul>
+          <li class="navbar-logo">
+            <a href="../index.html">
+              <img
+                src="../public/assets/img/sg.PNG"
+                alt="Logo de la Société générale"
+              />
+              <h2>L'avenir, c'est vous</h2></a
+            >
+          </li>
+          <ul>
+            <li><a href="">Notre partenariat</a></li>
+            <li><a href="">Simuler un prêt</a></li>
+            <li><a href="">Ouvrir un compte</a></li>
+          </ul>
+          <li>
+            <a href="">
+              <img
+                class="univ-stras"
+                src="../public/assets/img/Signature_Universite_Strasbourg_Unistra2_Transparent (2).png"
+                alt="Logo de l'Université de Strasbourg "
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="simulation">
+      <h2>Simulateur de prêt étudiant</h2>
+      <div>
+        <section class="simulation-inputs-section">
+          <h3>Indiquer le montant et la durée souhaités ci-dessous.</h3>
+          <form id="form">
+            <div>
+              <label for="montant">Montant souhaité</label>
+              <input id="montant" type="number" />
+            </div>
+            <div>
+              <label for="duree">Durée du prêt</label>
+              <input id="duree" type="number" min="2" max="10" value="2" />
+            </div>
+            <input type="submit" value="Simuler mon prêt" id="submit-input" />
+          </form>
+        </section>
+        <section class="result-section">
+          <h3>Votre mensualité maximale sera de</h3>
+          <p id="result-mensualite"></p>
+          <p>
+            Rappel : le taux d'un crédit étudiant est de 0% chez société
+            Générale.
+          </p>
+        </section>
+      </div>
+      <section class="rendez-vous-section">
+        <h2>
+          Cela m'intéresse je souhaite
+          <span class="rendez-vous" id="show-rdv">prendre rendez-vous</span> ou
+          m'<a class="rendez-vous" href="../index.html#information"
+            >informer sur les avantages du partenariat</a
+          >
+        </h2>
+        <p id="appointment"></p>
+
+        <div class="none" id="rdv-div">
+          <h2>
+            Prenez rendez-vous dans l'agence de Strasbourg de votre choix en
+            quelques clics
+          </h2>
+          <form class="form-rdv" id="form-rdv">
+            <div class="form-rdv-main">
+              <label for="fieldset">Civilité</label>
+              <fieldset form="form-rdv" id="fieldset">
+                <div>
+                  <input
+                    type="radio"
+                    id="madame"
+                    name="sexe"
+                    class="sexe-input"
+                    value="Madame"
+                    checked
+                  />
+                  <label for="madame">Madame</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="monsieur"
+                    class="sexe-input"
+                    name="sexe"
+                    value="Monsieur"
+                  />
+                  <label for="monsieur">Monsieur</label>
+                </div>
+              </fieldset>
+              <div class="inputs-rdv">
+                <div>
+                  <label for="nom">Nom</label>
+                  <input
+                    type="text"
+                    id="nom"
+                    placeholder="Votre nom"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="prenom">Prénom</label>
+                  <input
+                    type="text"
+                    id="prenom"
+                    placeholder="Votre prénom"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="date-birth">Date de naissance</label>
+                  <input type="date" id="date-birth" required />
+                </div>
+                <div>
+                  <label for="mail">Adresse mail</label>
+                  <input
+                    type="email"
+                    id="mail"
+                    placeholder="Adresse mail"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone">Téléphone mobile</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    placeholder="Votre téléphone mobile"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="date-rdv">Date de rendez-vous</label>
+                  <input type="date" id="date-rdv" required />
+                </div>
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Prendre rendez-vous"
+              class="submit-btn-rdv"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>Université de Strasbourg - Société Général</h3>
+      <p>
+        <a href="#">Contacts</a> - <a href="#">Crédits et mentions légales</a> -
+        <a href="#">Données personnelles</a> -
+        <a href="#">Accessibilité : partiellement conforme</a>
+      </p>
+    </footer>
+    <script src="../public/js/main.js"></script>
+  </body>
+</html>
